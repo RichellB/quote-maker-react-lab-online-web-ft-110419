@@ -7,6 +7,8 @@ const QuoteCard = (props) =>
         <blockquote className="card-blockquote">
           {/* <p>{Render Quote Content}</p> */}
           {/* <footer>- author <cite title="Source Title">{Render Quote Author}</cite></footer> */}
+          p>{quote.content}</p>
+          <footer>- author <cite title="Source Title">{quote.author}</cite></footer>
         </blockquote>
       </div>
       <div className="float-right">
@@ -31,6 +33,7 @@ const QuoteCard = (props) =>
           </button>
         </div>
         {/* <div>Votes: {Render Quote Votes}</div> */}
+         <div>Votes: {quote.votes}</div>
       </div>
     </div>
   </div>;
